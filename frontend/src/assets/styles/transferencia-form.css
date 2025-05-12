@@ -1,0 +1,163 @@
+/**
+ * Estilos do formulário de transferência
+ * Contém:
+ * - Layout do formulário
+ * - Estilos dos campos
+ * - Mensagens de erro e sucesso
+ * - Responsividade
+ */
+
+.transferencia-form {
+  background-color: #333333;
+  border-radius: var(--radius);
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .transferencia-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .transferencia-form {
+    padding: 2rem;
+  }
+}
+
+.transferencia-form h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: -0.025em;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: var(--radius);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.datetime-inputs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .datetime-inputs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.valor-calculado {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid #ffffff;
+  font-size: 0.875rem;
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.875rem;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: auto;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+button[type="submit"]:disabled {
+  background-color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.error-message {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error-color);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+}
+
+.error-message h3 {
+  color: var(--error-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.erros-detalhados {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.erros-detalhados li {
+  color: var(--error-color);
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.success-message {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success-color);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-top: 1rem;
+}
+
+.success-message h3 {
+  color: var(--success-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+} 

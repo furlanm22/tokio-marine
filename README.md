@@ -59,7 +59,7 @@ backend/src/main/java/com/tokiomarine/tokiomarine/
 1. Navegue até a pasta do backend: `cd backend`
 2. Execute o comando: `mvn spring-boot:run`
 3. A aplicação estará disponível em: `http://localhost:8081`
-4. Console H2 disponível em: `http://localhost:8080/h2-console`
+4. Console H2 disponível em: `http://localhost:8081/h2-console`
 
 ### Configurações do Backend
 - Banco de dados H2 em memória
